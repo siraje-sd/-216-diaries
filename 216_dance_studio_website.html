@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+216 Dance Studio | Dance Culture & Vlog Vault</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-216.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#071B3B',
+                            card: '#122D5B',
+                            crimson: '#EAF6FF',
+                            orange: '#79D6FF',
+                            purple: '#B7DFFF'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Bebas Neue', 'sans-serif'],
+                        impact: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #071B3B;
+            color: #EAF6FF;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(121, 214, 255, 0.7), 0 0 35px rgba(186, 230, 255, 0.35);
+        }
+        .text-glow-orange {
+            text-shadow: 0 0 20px rgba(121, 214, 255, 0.7);
+        }
+        .glass-panel {
+            background: rgba(18, 45, 91, 0.72);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(186, 230, 255, 0.14);
+        }
+        .glass-panel-hover:hover {
+            border-color: rgba(121, 214, 255, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(121, 214, 255, 0.25);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #EAF6FF 0%, #79D6FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #EAF6FF 0%, #79D6FF 100%);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(121, 214, 255, 0.18) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="hero-pattern antialiased selection:bg-brand-crimson selection:text-white">
+
+    <nav class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-white/10 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="assets/logo-216.svg" alt="+216 Dance Studio logo" class="w-12 h-12 rounded-lg object-cover shadow-lg shadow-brand-crimson/30 group-hover:scale-105 transition-transform">
+                    <span class="font-heading text-3xl tracking-wider text-white group-hover:text-brand-crimson transition-colors">
+                        +216 <span class="text-brand-orange">DANCE</span> STUDIO
+                    </span>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wider">
+                    <a href="#about" class="hover:text-brand-crimson transition-colors">ABOUT</a>
+                    <a href="#vlogs" class="hover:text-brand-crimson transition-colors flex items-center gap-1.5">
+                        <i class="fa-brands fa-youtube text-red-500"></i> VLOG VAULT
+                    </a>
+                    <a href="#achievements" class="hover:text-brand-crimson transition-colors">ACHIEVEMENTS</a>
+                    <a href="#gallery" class="hover:text-brand-crimson transition-colors">GALLERY</a>
+                    <a href="#contact" class="hover:text-brand-crimson transition-colors">CONTACT</a>
+                </div>
+
+                <!-- CTA & Social Buttons -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="https://www.youtube.com/@216Dancediaries" target="_blank" rel="noopener noreferrer" class="p-2 rounded-full glass-panel hover:text-red-500 hover:scale-110 transition-all" title="YouTube @216Dancediaries">
+                        <i class="fa-brands fa-youtube text-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/216dancestudiotn/?hl=en" target="_blank" rel="noopener noreferrer" class="p-2 rounded-full glass-panel hover:text-pink-500 hover:scale-110 transition-all" title="Instagram @216dancestudiotn">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full gradient-bg font-bold text-sm tracking-wide text-white shadow-lg shadow-brand-crimson/25 hover:shadow-brand-crimson/50 hover:scale-105 active:scale-95 transition-all">
+                        JOIN SESSION
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg glass-panel text-gray-300 hover:text-white">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-white/10 px-4 pt-4 pb-6 space-y-3">
+            <a href="#about" class="block px-3 py-2 rounded-md hover:bg-white/5 font-semibold">ABOUT</a>
+            <a href="#vlogs" class="block px-3 py-2 rounded-md hover:bg-white/5 font-semibold text-red-400">
+                <i class="fa-brands fa-youtube mr-2"></i> VLOG VAULT
+            </a>
+            <a href="#achievements" class="block px-3 py-2 rounded-md hover:bg-white/5 font-semibold">ACHIEVEMENTS</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-md hover:bg-white/5 font-semibold">GALLERY</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-white/5 font-semibold">CONTACT</a>
+            <div class="pt-4 flex items-center justify-between border-t border-white/10">
+                <div class="flex space-x-3">
+                    <a href="https://www.youtube.com/@216Dancediaries" target="_blank" class="p-2 rounded-full glass-panel text-red-500"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/216dancestudiotn/?hl=en" target="_blank" class="p-2 rounded-full glass-panel text-pink-500"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="#contact" class="px-5 py-2 rounded-full gradient-bg font-bold text-xs text-white">JOIN SESSION</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden">
+        <!-- Ambient Glowing Lights -->
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-brand-crimson/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-orange/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto text-center z-10">
+            <!-- Tunisia Tag Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-bold tracking-widest text-brand-orange uppercase mb-6 border border-brand-orange/30 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-brand-crimson"></span> TUNISIA DANCE HUB (+216)
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-tight text-white mb-6 uppercase">
+                ELEVATING <span class="gradient-text text-glow">DANCE</span> CULTURE
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-300 font-light leading-relaxed mb-10">
+                Welcome to <strong class="text-white font-semibold">+216 Dance Studio</strong> — Tunisia's premier center for street dance, choreography jams, artist stage tours, and raw dance diaries.
+            </p>
+
+            <!-- Hero Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12">
+                <a href="#vlogs" class="w-full sm:w-auto px-8 py-4 rounded-full gradient-bg font-bold text-base tracking-wider text-white shadow-xl shadow-brand-crimson/30 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-circle-play text-xl"></i> WATCH TOUR VLOGS
+                </a>
+                <a href="#achievements" class="w-full sm:w-auto px-8 py-4 rounded-full glass-panel hover:bg-white/10 border border-white/20 font-bold text-base tracking-wider text-white hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+                    EXPLORE ACHIEVEMENTS <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Social Followers Proof -->
+            <div class="pt-8 border-t border-white/10 max-w-2xl mx-auto flex flex-wrap justify-center items-center gap-6 sm:gap-12 text-gray-400 text-sm">
+                <a href="https://www.youtube.com/@216Dancediaries" target="_blank" class="flex items-center gap-2 hover:text-red-500 transition-colors">
+                    <i class="fa-brands fa-youtube text-2xl text-red-500"></i>
+                    <div class="text-left">
+                        <div class="font-bold text-white leading-none">@216Dancediaries</div>
+                        <div class="text-xs text-gray-400">Official YouTube Channel</div>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/216dancestudiotn/?hl=en" target="_blank" class="flex items-center gap-2 hover:text-pink-500 transition-colors">
+                    <i class="fa-brands fa-instagram text-2xl text-pink-500"></i>
+                    <div class="text-left">
+                        <div class="font-bold text-white leading-none">@216dancestudiotn</div>
+                        <div class="text-xs text-gray-400">Instagram Community</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-4 relative bg-brand-card/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Text Column -->
+                <div>
+                    <div class="flex items-center gap-2 text-brand-crimson font-bold tracking-widest text-sm uppercase mb-3">
+                        <i class="fa-solid fa-bolt"></i> THE MOVEMENT
+                    </div>
+                    <h2 class="font-heading text-5xl sm:text-6xl text-white tracking-wide mb-6">
+                        WHERE PASSION MEETS <span class="gradient-text">STREET ENERGY</span>
+                    </h2>
+                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
+                        Founded in Tunisia (+216), our studio was created to give dancers, hip-hop artists, and choreographers a high-octane sanctuary to train, collaborate, and take their skills to national and international stages.
+                    </p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed mb-8">
+                        From hosting masterclasses with top choreographers to directing backstage tour performances for leading North African recording artists, +216 Dance Studio represents the heart of modern street culture.
+                    </p>
+
+                    <!-- Feature List -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl glass-panel flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg gradient-bg text-white"><i class="fa-solid fa-drumstick-bite text-lg"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Underground Vibes</h4>
+                                <p class="text-xs text-gray-400 mt-1">Authentic street dance culture & freestyle jams.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl glass-panel flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg gradient-bg text-white"><i class="fa-solid fa-sliders text-lg"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Pro Lighting & Sound</h4>
+                                <p class="text-xs text-gray-400 mt-1">Acoustic space fitted with dynamic stage lighting.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl glass-panel flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg gradient-bg text-white"><i class="fa-solid fa-graduation-cap text-lg"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Masterclasses</h4>
+                                <p class="text-xs text-gray-400 mt-1">Intercity workshops & guest instructor sessions.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl glass-panel flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg gradient-bg text-white"><i class="fa-solid fa-compact-disc text-lg"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Stage Tours</h4>
+                                <p class="text-xs text-gray-400 mt-1">Choreography & backup crew for major music tours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Studio Image Grid Showcase -->
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114113.png" alt="Dance Studio Session" class="rounded-2xl w-full h-auto block glass-panel shadow-2xl">
+                        <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114147.png" alt="Choreography Jam" class="rounded-2xl w-full h-auto block glass-panel shadow-2xl mt-8">
+                    </div>
+                    <!-- Center Decorative Badge -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-x-1/2 p-4 rounded-2xl glass-panel border border-brand-crimson/50 text-center shadow-2xl bg-brand-dark/90 hidden sm:block">
+                        <span class="font-heading text-4xl text-brand-crimson block">216</span>
+                        <span class="text-xs font-bold tracking-widest text-white uppercase">TUNISIA CREW</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="vlogs" class="py-24 px-4 relative">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Title -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <div class="flex items-center gap-2 text-red-500 font-bold tracking-widest text-sm uppercase mb-3">
+                        <i class="fa-brands fa-youtube text-lg"></i> YOUTUBE CHANNEL: @216DANCEDIARIES
+                    </div>
+                    <h2 class="font-heading text-5xl sm:text-6xl text-white tracking-wide">
+                        THE <span class="gradient-text">VLOG VAULT</span> & TOUR DIARIES
+                    </h2>
+                </div>
+                <a href="https://www.youtube.com/@216Dancediaries" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 font-bold text-sm text-white transition-all shadow-lg shadow-red-600/30">
+                    <i class="fa-brands fa-youtube text-lg"></i> SUBSCRIBE ON YOUTUBE
+                </a>
+            </div>
+
+            <!-- Featured Video Showcase (Interactive Modal Player) -->
+            <div class="mb-12 rounded-3xl glass-panel border border-white/10 overflow-hidden grid lg:grid-cols-12 gap-0">
+                <div class="lg:col-span-7 relative group cursor-pointer aspect-video bg-black" onclick="openVideoModal('cVimg7NWb3c', 'Mortadha Lutfi Tour Vlogs - Backstage & Stage Performance')">
+                    <img src="https://img.youtube.com/vi/cVimg7NWb3c/hqdefault.jpg" alt="Tour Vlog Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center text-white text-2xl shadow-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-play ml-1"></i>
+                        </div>
+                    </div>
+                    <span class="absolute bottom-4 left-4 px-3 py-1 rounded bg-black/80 text-xs font-bold text-brand-orange border border-white/10">FEATURED TOUR VLOG</span>
+                </div>
+                <div class="lg:col-span-5 p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 text-xs text-gray-400 mb-3">
+                            <span><i class="fa-regular fa-clock mr-1"></i> Vlog Episode 01</span>
+                            <span>•</span>
+                            <span>@216Dancediaries</span>
+                        </div>
+                        <h3 class="font-heading text-3xl sm:text-4xl text-white mb-4">
+                            # Ep 4 | Mortadha Ftiti. Summer Tour 2026. عشنا التورني بكل تفاصيلها! 🇹🇳🍿
+                        </h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Go behind the scenes with +216 Dance Studio dancers during the national Mortadha Lutfi concert tour. Watch rehearsals, venue soundchecks, backstage energy, and live stage dance performances.
+                        </p>
+                    </div>
+                    <button onclick="openVideoModal('cVimg7NWb3c', 'Mortadha Lutfi Tour Vlogs')" class="w-full py-3.5 rounded-xl gradient-bg font-bold text-sm tracking-wide text-white shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-play"></i> WATCH FULL VLOG NOW
+                    </button>
+                </div>
+            </div>
+
+            <!-- YouTube Video Cards Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="vlog-grid">
+                <!-- Card 1 -->
+                <div class="rounded-2xl glass-panel overflow-hidden">
+                    <div class="bg-gray-900 cursor-pointer" onclick="openVideoModal('38hO2xM8188', 'Studio Choreography Jam')">
+                        <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114113.png" alt="Video Thumbnail" class="w-full h-auto block">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-crimson tracking-wider uppercase">Studio Session</span>
+                        <h4 class="font-heading text-2xl text-white mt-1 mb-2">
+                            INTENSIVE CHOREO JAM & URBAN DRILLS
+                        </h4>
+                        <p class="text-gray-400 text-xs line-clamp-2">High energy urban dance training session at +216 Dance Studio with resident dancers.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="rounded-2xl glass-panel overflow-hidden">
+                    <div class="bg-gray-900 cursor-pointer" onclick="openVideoModal('38hO2xM8188', 'Tunisia Intercity Workshop')">
+                        <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114147.png" alt="Video Thumbnail" class="w-full h-auto block">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-orange tracking-wider uppercase">Workshop Highlights</span>
+                        <h4 class="font-heading text-2xl text-white mt-1 mb-2">
+                            TUNISIA STREET DANCE MASTERCLASS TOUR
+                        </h4>
+                        <p class="text-gray-400 text-xs line-clamp-2">Highlights from our intercity workshops connecting street dancers across Tunisian cities.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="rounded-2xl glass-panel overflow-hidden">
+                    <div class="bg-gray-900 cursor-pointer" onclick="openVideoModal('38hO2xM8188', 'Behind The Scenes Vlogs')">
+                        <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114203.png" alt="Video Thumbnail" class="w-full h-auto block">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-purple-400 tracking-wider uppercase">Behind The Scenes</span>
+                        <h4 class="font-heading text-2xl text-white mt-1 mb-2">
+                            DAY IN THE LIFE: CREW REHEARSALS
+                        </h4>
+                        <p class="text-gray-400 text-xs line-clamp-2">Raw vlog footage of daily studio routines, battle preps, and community vibes in Tunis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-24 px-4 relative bg-brand-card/30 border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-brand-orange font-bold tracking-widest text-sm uppercase mb-3">MILESTONES & RECOGNITION</div>
+                <h2 class="font-heading text-5xl sm:text-6xl text-white">PROUD <span class="gradient-text">ACHIEVEMENTS</span></h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-2">Empowering the next generation of dancers and representing urban dance across Tunisia.</p>
+            </div>
+
+            <!-- Stats Counters Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                <div class="p-6 rounded-2xl glass-panel text-center border-t-2 border-brand-crimson">
+                    <div class="font-heading text-5xl sm:text-6xl text-white mb-1 tracking-tight" id="counter-dancers">500+</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Dancers Trained</div>
+                </div>
+                <div class="p-6 rounded-2xl glass-panel text-center border-t-2 border-brand-orange">
+                    <div class="font-heading text-5xl sm:text-6xl text-white mb-1 tracking-tight" id="counter-workshops">25+</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Intercity Workshops</div>
+                </div>
+                <div class="p-6 rounded-2xl glass-panel text-center border-t-2 border-brand-crimson">
+                    <div class="font-heading text-5xl sm:text-6xl text-white mb-1 tracking-tight" id="counter-tours">10+</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Artist Stage Tours</div>
+                </div>
+                <div class="p-6 rounded-2xl glass-panel text-center border-t-2 border-brand-orange">
+                    <div class="font-heading text-5xl sm:text-6xl text-white mb-1 tracking-tight" id="counter-views">50K+</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">YouTube Vlog Views</div>
+                </div>
+            </div>
+
+            <!-- Highlight Cards -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-3xl glass-panel relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-8 text-white/5 font-heading text-9xl select-none">01</div>
+                    <div class="relative z-10">
+                        <span class="px-3 py-1 rounded-full bg-brand-crimson/20 text-brand-crimson text-xs font-bold uppercase tracking-wider mb-4 inline-block border border-brand-crimson/30">Artist Stage Collaborations</span>
+                        <h3 class="font-heading text-3xl text-white mb-3">CONCERT TOURS & BACKSTAGE DIRECTING</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Official choreography and stage management crew for top musical artists in Tunisia, including full concert tour backup dancing for Mortadha Lutfi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl glass-panel relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-8 text-white/5 font-heading text-9xl select-none">02</div>
+                    <div class="relative z-10">
+                        <span class="px-3 py-1 rounded-full bg-brand-orange/20 text-brand-orange text-xs font-bold uppercase tracking-wider mb-4 inline-block border border-brand-orange/30">Community Jams & Shuttles</span>
+                        <h3 class="font-heading text-3xl text-white mb-3">TUNISIA URBAN COMMUNITY NETWORK</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Organized intercity shuttles bringing together youth dancers from different governorates for street dance battles, workshops, and choreography showcases.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 px-4 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-brand-crimson font-bold tracking-widest text-sm uppercase mb-3">VISUAL STORYTELLING</div>
+                <h2 class="font-heading text-5xl sm:text-6xl text-white">STUDIO & <span class="gradient-text">STAGE GALLERY</span></h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-2">Moments captured from workshops, tours, and daily studio sessions.</p>
+            </div>
+
+            <!-- Masonry Photo Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="rounded-2xl overflow-hidden glass-panel cursor-pointer">
+                    <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114113.png" alt="Dance Routine" class="w-full h-auto block">
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="rounded-2xl overflow-hidden glass-panel cursor-pointer">
+                    <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114147.png" alt="Breakdance Session" class="w-full h-auto block">
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="rounded-2xl overflow-hidden glass-panel cursor-pointer">
+                    <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114203.png" alt="Backstage Pass" class="w-full h-auto block">
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="rounded-2xl overflow-hidden glass-panel cursor-pointer">
+                    <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114113.png" alt="Urban Battle" class="w-full h-auto block">
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="rounded-2xl overflow-hidden glass-panel cursor-pointer">
+                    <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114147.png" alt="Masterclass" class="w-full h-auto block">
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="rounded-2xl overflow-hidden glass-panel cursor-pointer">
+                    <img src="assets/Capture%20d'%C3%A9cran%202026-09-19%20114203.png" alt="Community Vibes" class="w-full h-auto block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-black pt-20 pb-12 border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 mb-16">
+                
+                <!-- Brand Info Column -->
+                <div class="lg:col-span-5">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="assets/logo-216.svg" alt="+216 Dance Studio logo" class="w-12 h-12 rounded-lg object-cover">
+                        <span class="font-heading text-3xl text-white">+216 <span class="text-brand-orange">DANCE</span> STUDIO</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Tunisia’s epicenter for street dance, choreography jams, artist stage tours, and vlog diaries. Join our sessions or follow our journey online.
+                    </p>
+                    <!-- Social Pill Badges -->
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.youtube.com/@216Dancediaries" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full glass-panel hover:bg-red-600/20 hover:border-red-500 text-sm font-semibold flex items-center gap-2 transition-all">
+                            <i class="fa-brands fa-youtube text-red-500"></i> YouTube @216Dancediaries
+                        </a>
+                        <a href="https://www.instagram.com/216dancestudiotn/?hl=en" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full glass-panel hover:bg-pink-600/20 hover:border-pink-500 text-sm font-semibold flex items-center gap-2 transition-all">
+                            <i class="fa-brands fa-instagram text-pink-500"></i> Instagram @216dancestudiotn
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instagram CTA Showcase Box -->
+                <div class="lg:col-span-4 p-6 rounded-2xl glass-panel border border-pink-500/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-pink-400 uppercase tracking-widest"><i class="fa-brands fa-instagram mr-1"></i> INSTAGRAM FEED</span>
+                            <span class="w-2 h-2 rounded-full bg-green-500 animate-ping"></span>
+                        </div>
+                        <h4 class="font-heading text-2xl text-white mb-2">FOLLOW @216dancestudiotn</h4>
+                        <p class="text-xs text-gray-300">Catch daily class updates, story clips, timetable releases, and registration links for upcoming masterclasses.</p>
+                    </div>
+                    <a href="https://www.instagram.com/216dancestudiotn/?hl=en" target="_blank" rel="noopener noreferrer" class="mt-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold text-center text-xs tracking-wider uppercase hover:opacity-90 transition-opacity">
+                        OPEN INSTAGRAM PROFILE <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Studio Contact Details -->
+                <div class="lg:col-span-3">
+                    <h4 class="font-heading text-2xl text-white mb-4">LOCATION & CONTACT</h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-crimson mt-1"></i>
+                            <span>Tunis / Nabeul / Intercity Workshops, Tunisia (+216)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-orange"></i>
+                            <span>Phone Code: +216 (Tunisia)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-crimson"></i>
+                            <span>contact@216dancestudio.tn</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright Footer -->
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 +216 Dance Studio. All rights reserved. Urban Dance Hub Tunisia.</p>
+                <div class="flex space-x-6">
+                    <a href="#about" class="hover:text-gray-300">About</a>
+                    <a href="#vlogs" class="hover:text-gray-300">YouTube Vlogs</a>
+                    <a href="#gallery" class="hover:text-gray-300">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="video-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="relative w-full max-w-4xl bg-brand-card rounded-2xl overflow-hidden border border-white/20 shadow-2xl">
+            <!-- Modal Header -->
+            <div class="p-4 bg-brand-dark border-b border-white/10 flex items-center justify-between">
+                <h4 id="modal-title" class="font-heading text-2xl text-white tracking-wide">PLAYING VLOG</h4>
+                <button onclick="closeVideoModal()" class="p-2 text-gray-400 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Video Iframe Container -->
+            <div class="relative aspect-video bg-black">
+                <iframe id="modal-iframe" class="w-full h-full" src="" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Interactive Video Modal Player logic
+        function openVideoModal(videoId, title) {
+            const modal = document.getElementById('video-modal');
+            const iframe = document.getElementById('modal-iframe');
+            const modalTitle = document.getElementById('modal-title');
+
+            if (window.location.protocol === 'file:') {
+                modalTitle.textContent = 'Local preview notice';
+                iframe.src = '';
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+
+                const content = document.createElement('div');
+                content.className = 'flex items-center justify-center h-full w-full text-center p-6 text-white';
+                content.innerHTML = '<div><p class="text-lg font-bold mb-2">YouTube embeds require a web server.</p><p class="text-sm text-gray-300">Open the page through http://localhost:8000 to play the video correctly.</p></div>';
+
+                const container = iframe.parentElement;
+                container.innerHTML = '';
+                container.appendChild(content);
+                return;
+            }
+
+            const embedUrl = new URL(`https://www.youtube.com/embed/${videoId}`);
+            embedUrl.searchParams.set('autoplay', '1');
+            embedUrl.searchParams.set('rel', '0');
+            embedUrl.searchParams.set('modestbranding', '1');
+            embedUrl.searchParams.set('playsinline', '1');
+            if (window.location.origin && window.location.origin !== 'null') {
+                embedUrl.searchParams.set('origin', window.location.origin);
+            }
+
+            iframe.src = embedUrl.toString();
+            modalTitle.textContent = title || 'YouTube Vlog Showcase';
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const iframe = document.getElementById('modal-iframe');
+
+            iframe.src = '';
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on Escape key press
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeVideoModal();
+            }
+        });
+    </script>
+</body>
+</html>

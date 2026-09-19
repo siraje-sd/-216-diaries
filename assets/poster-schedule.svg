@@ -1,0 +1,62 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="sched-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1.5" fill="#5ea9f5" opacity="0.55"/>
+    </pattern>
+    <linearGradient id="sched-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d5eb7"/>
+      <stop offset="100%" stop-color="#0a4c91"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#sched-bg)"/>
+  <rect width="1200" height="1200" fill="url(#sched-dots)"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="80" y="150" font-size="90" fill="#f0f8ff">WEEKLY</text>
+    <text x="80" y="250" font-size="90" fill="#f0f8ff">WINTER SCHEDULE</text>
+  </g>
+
+  <g transform="translate(920 50)">
+    <rect x="0" y="0" width="180" height="180" rx="22" fill="#f4f4f4"/>
+    <text x="90" y="82" text-anchor="middle" font-size="84" font-weight="900" fill="#133f6d">216</text>
+    <text x="90" y="140" text-anchor="middle" font-size="18" fill="#133f6d" letter-spacing="3">DANCE STUDIO</text>
+  </g>
+
+  <g transform="translate(80 340)" font-family="Arial, Helvetica, sans-serif" font-weight="900">
+    <rect x="0" y="0" width="1040" height="610" fill="none" stroke="#dfeefc" stroke-width="4"/>
+    <line x1="345" y1="0" x2="345" y2="610" stroke="#dfeefc" stroke-width="4"/>
+    <line x1="690" y1="0" x2="690" y2="610" stroke="#dfeefc" stroke-width="4"/>
+    <line x1="0" y1="200" x2="1040" y2="200" stroke="#dfeefc" stroke-width="4"/>
+    <line x1="0" y1="400" x2="1040" y2="400" stroke="#dfeefc" stroke-width="4"/>
+
+    <text x="90" y="90" font-size="42" fill="#f4f8ff">WEDNESDAY</text>
+    <text x="420" y="90" font-size="42" fill="#f4f8ff">SATURDAY</text>
+    <text x="770" y="90" font-size="42" fill="#f4f8ff">SUNDAY</text>
+
+    <text x="80" y="280" font-size="34" fill="#f4f8ff">LEARN CLASS</text>
+    <text x="80" y="322" font-size="24" fill="#f4f8ff">18H30 - 20H00</text>
+
+    <text x="420" y="280" font-size="34" fill="#f4f8ff">CHOREO CLASS</text>
+    <text x="420" y="322" font-size="24" fill="#f4f8ff">[CADETS + KIDS]</text>
+    <text x="420" y="360" font-size="26" fill="#f4f8ff">13H30 - 15H00</text>
+
+    <text x="760" y="280" font-size="34" fill="#f4f8ff">KIDS CLASS</text>
+    <text x="760" y="322" font-size="24" fill="#f4f8ff">[6 - 9 YEARS]</text>
+    <text x="760" y="360" font-size="28" fill="#f4f8ff">10H00 - 11H30</text>
+
+    <text x="420" y="520" font-size="34" fill="#f4f8ff">CADETS CLASS</text>
+    <text x="420" y="562" font-size="24" fill="#f4f8ff">[10 - 13 YEARS]</text>
+    <text x="420" y="600" font-size="28" fill="#f4f8ff">11H30 - 13H00</text>
+
+    <text x="760" y="520" font-size="34" fill="#f4f8ff">SENIOR CLASS</text>
+    <text x="760" y="560" font-size="28" fill="#f4f8ff">13H00 - 15H00</text>
+    <text x="760" y="600" font-size="24" fill="#f4f8ff">[S2]</text>
+
+    <text x="80" y="520" font-size="32" fill="#f4f8ff">[S1]</text>
+    <text x="820" y="430" font-size="28" fill="#f4f8ff">[S2]</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="500" y="1040" text-anchor="middle" font-size="40" fill="#f3f9ff">2025 - 2026</text>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="9" cy="9" r="1.1" fill="#6DB7FF" opacity="0.55"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c7bdb"/>
+      <stop offset="100%" stop-color="#0b68b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <rect width="1200" height="1200" fill="url(#dots)" opacity="0.85"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="70" y="140" font-size="34" fill="#dfeefc" opacity="0.9">IDEAL ARENA</text>
+    <text x="460" y="140" font-size="34" fill="#dfeefc" opacity="0.9">SUMMER</text>
+    <text x="660" y="140" font-size="34" fill="#dfeefc" opacity="0.9">DANCE</text>
+    <text x="950" y="140" font-size="34" fill="#dfeefc" opacity="0.9">+216</text>
+    <text x="1040" y="140" font-size="28" fill="#dfeefc" opacity="0.8">09.08.10</text>
+  </g>
+
+  <g>
+    <g transform="translate(70 220)">
+      <rect x="0" y="0" width="150" height="70" rx="16" fill="#f2f2f2"/>
+      <text x="75" y="45" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="900" fill="#0c0c18">JED</text>
+    </g>
+    <g transform="translate(260 220)">
+      <rect x="0" y="0" width="180" height="70" rx="16" fill="#f2f2f2"/>
+      <text x="90" y="45" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900" fill="#0c0c18">SAIFO</text>
+    </g>
+    <g transform="translate(500 220)">
+      <rect x="0" y="0" width="200" height="70" rx="16" fill="#f2f2f2"/>
+      <text x="100" y="45" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="900" fill="#0c0c18">HOUSSEM</text>
+    </g>
+    <g transform="translate(770 220)">
+      <rect x="0" y="0" width="180" height="70" rx="16" fill="#f2f2f2"/>
+      <text x="90" y="45" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="900" fill="#0c0c18">DABEAST</text>
+    </g>
+  </g>
+
+  <g>
+    <g transform="translate(80 330)">
+      <circle cx="70" cy="180" r="62" fill="#f8e2d0"/>
+      <path d="M26 270 Q70 236 114 270 L120 340 L20 340 Z" fill="#d8d1d1"/>
+      <path d="M36 270 Q55 300 80 300 Q106 300 115 270" fill="#c0bdbd" opacity="0.7"/>
+      <rect x="20" y="180" width="100" height="55" rx="22" fill="#1d4b4d"/>
+      <circle cx="160" cy="110" r="32" fill="#f8e2d0"/>
+      <path d="M120 210 Q150 150 195 210 L210 320 L110 320 Z" fill="#d8d1d1"/>
+      <rect x="120" y="180" width="90" height="52" rx="18" fill="#1d4b4d"/>
+    </g>
+    <g transform="translate(330 300)">
+      <circle cx="110" cy="170" r="72" fill="#f7dfcf"/>
+      <path d="M50 300 Q110 240 175 300 L175 390 L50 390 Z" fill="#d0d0d0"/>
+      <path d="M70 260 Q110 220 150 260" fill="#c1c1c1" opacity="0.7"/>
+      <rect x="22" y="160" width="180" height="76" rx="28" fill="#7f70d8"/>
+      <path d="M11 270 C60 250 110 258 155 285" stroke="#c6d8ef" stroke-width="12" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(620 300)">
+      <circle cx="120" cy="170" r="72" fill="#f8e0cf"/>
+      <path d="M55 300 Q120 245 185 300 L185 390 L55 390 Z" fill="#d9d9d9"/>
+      <path d="M75 270 Q120 220 165 270" fill="#c1c1c1" opacity="0.7"/>
+      <path d="M55 150 L165 150 A30 30 0 0 1 180 180 L180 220 A30 30 0 0 1 150 250 L90 250 A30 30 0 0 1 60 220 L60 180 A30 30 0 0 1 55 150 Z" fill="#7e7de0"/>
+    </g>
+    <g transform="translate(860 310)">
+      <circle cx="120" cy="170" r="72" fill="#f4d8c2"/>
+      <path d="M60 300 Q120 250 180 300 L180 390 L60 390 Z" fill="#d9d9d9"/>
+      <path d="M80 270 Q120 230 160 270" fill="#c1c1c1" opacity="0.7"/>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="150" y="870" font-size="240" fill="#f7dd20">LINEUP</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#dfeefc" opacity="0.9">
+    <text x="100" y="1000">THREE</text>
+    <text x="260" y="1000">THIS CAMP RETURNS TO BRING TOGETHER</text>
+    <text x="100" y="1048">DANCERS FROM DIFFERENT BACKGROUNDS</text>
+    <text x="100" y="1096">UNITED BY THE SAME PASSION</text>
+  </g>
+</svg>
